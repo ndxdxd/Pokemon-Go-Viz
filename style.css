@@ -1,0 +1,115 @@
+:root {
+    
+}
+y-label{
+    font-family: 'SF Pixelate','sans-serif'
+}
+text{
+    font-family: 'SF Pixelate','sans-serif'
+}
+button{
+    font-family: 'SF Pixelate', sans-serif;
+
+}
+
+section {
+    font-family: 'SF Pixelate', sans-serif;
+    text-align: center;
+    
+}
+
+.hero-title {
+    font-size: 6rem;
+    font-family: 'SF Pixelate', sans-serif;
+
+    color: gold;
+    text-shadow: -2px -2px 0 blue, 2px -2px 0 blue, -2px 2px 0 blue, 2px 2px 0 blue;
+    text-align: center;
+    
+    
+}
+.intro-sec{
+    border: 2px solid black
+}
+.hero-author {
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.751);
+    font-family: 'SF Pixelate', sans-serif;
+    text-align: center;
+    margin-bottom: 100px;
+
+   
+}
+#intro-head{
+    margin-top: 10px;
+}
+.intro-text{
+    text-align: center;
+    border: 2px solid black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#charts-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.chart-holder {
+    width: 80%; /* Adjust the width as needed */
+    margin: auto;
+    
+}
+
+.chart-holder button {
+    margin: 5px;
+  }
+.bar-container{
+    scale: 20%;
+}
+
+.section-text {
+    width: var(--text-width);
+    margin: auto;
+    font-family: 'SF Pixelate', sans-serif;
+    text-align: center;
+    margin-top: 40px; /* Add desired spacing */
+    margin-bottom: 40px;
+    
+
+}
+
+.bar {
+    fill: skyblue;
+    transition: opacity 0.3s ease;
+  }
+  
+  .bar.fade {
+    opacity: 0.3;
+  }
+
+svg {
+    border: 2px solid black
+}
+body {
+    background-color: aliceblue; 
+}
+.section-title{
+    font-family: 'SF Pixelate', sans-serif;
+    text-align: center;
+    margin-top: 40px;
+
+}
+
+.tooltip {
+    position: absolute;
+    border: 1px solid #000000;
+    padding: 10px;
+    opacity: 0;
+    pointer-events: none;
+    background-color: white;
+  }
+
+.gif-holder{
+    display: flex;
+}

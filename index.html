@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Final Project</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script type="text/javascript" src="script.js">
+    </script>
+    <link href="https://fonts.cdnfonts.com/css/sf-pixelate" rel="stylesheet">
+    <style>
+      @import url('https://fonts.cdnfonts.com/css/sf-pixelate');
+    </style>
+
+
+                
+
+  </head>
+  <body onload = graphs()>
+    <section id = "intro-sec">
+      <h1 class="hero-title">Pokemon GeoQuest: Kanto Pokemons in Pokemon Go </h1>
+      <h2 class="hero-author">By Andy Truong</h2>
+      <h3 class ="intro-head">Introduction</h3>
+      <p class="intro-text">
+        Welcome to the captivating exploration of the fascinating world of Pokémon Go, 
+        where we dive deep into the enchanting realm of the Kanto region. 
+        In this data visualization, we embark on a thrilling journey through a bar chart,
+         network graph, and map, unveiling intriguing insights about the 151 original Pokémon 
+         that first captured our hearts. Prepare to be mesmerized as we unlock the secrets of 
+         this iconic Pokémon generation, shedding light on their distributions, interconnections,
+          and geographical presence. Join us as we delve into the numbers, connections, and 
+          locations that make up the captivating universe of Pokémon Go's Kanto region.
+      </p>
+    </section>
+    <!-- chart 1 -->
+    <div class="charts-container">
+      <!-- chart 1 -->
+      <section>
+        <h1 class="section-title">Pokemon Bar Chart</h1>
+        <p class="section-text">
+          The bar graph featured in this data visualization provides a comprehensive view of the 
+          distribution of attack, defense, and stamina stats among the Pokémon from the Kanto region. 
+          The graph allows you to effortlessly explore the variations in these crucial attributes 
+          across the 151 Pokémon. With the added functionality of a dynamic button, you have the 
+          power to switch between the distributions of attack, defense, and stamina with a simple
+          click. Moreover, as you navigate through the graph, a delightful interactive feature 
+          allows you to hover over individual bars, highlighting them to gain deeper insights
+          into specific Pokémon and their corresponding stat values.
+        </p>
+        <h3 id = "button-title"> Choose the stat to compare! </h3>
+        <button id="Attack">Attack</button>
+        <button id="Defense">Defense</button>
+        <button id="Stamina">Stamina</button>
+        <div id="bar-container"></div>
+      </section>
+    
+      <!-- chart 2 -->
+      <section>
+        <h1 class="section-title">Network of Pokemon Types</h1>
+        <p class="section-text">
+          In this captivating network graph, exploring the type weaknesses of Pokémon 
+          from the Kanto region, hovering over a node reveals the weaknesses of that 
+          specific Pokémon. The nodes connect if that pokemon's type is in the weakness of the other connected
+          pokemon. As you hover, the graph dynamically displays the vulnerabilities,
+          providing instant insights into the strategic aspects of battles. 
+          Discover the hidden weaknesses of each Pokémon with a simple hover,
+          enhancing your understanding of the interplay between types. 
+        </p>
+        <div id="network-container"></div>
+      </section>
+    
+      <!-- chart 3 -->
+      <section>
+        <h1 class="section-title">Map of Pokemon Locations</h1>
+        <p class="section-text">
+          Welcome to the captivating map graph, where the world map comes alive with points 
+          representing the locations where Pokémon were found in the Kanto region. 
+          This visually engaging graph provides a bird's-eye view of Pokémon
+          distributions across the globe, letting you zoom into the action. 
+          Each point on the map corresponds 
+          to a specific Pokémon, with different colors indicating the various types of Pokémon.
+          Uncover the geographical nuances and hotspots that define the 
+          Kanto region's Pokémon as you embark on an exciting journey
+          through this visually immersive map graph.
+        </p>
+        <div id="map-container"></div>
+      </section>
+      <section>
+        <p class="section-text">
+          Thank you for taking the time to read! I hope you were able to learn more about the Pokemon's 
+          in Pokemon Go! Happy Exploring!
+        </p>
+      </section>
+    </div>
+    <div id = 'gif-holder'>
+      <img src="pikachu.gif" alt="pikachu">
+      <img src="bulbasaur.gif" alt="bulbasaur">
+      <img src="charmander.gif" alt="charmander">
+
+    </div>
+    
+  </body>
+</html>
